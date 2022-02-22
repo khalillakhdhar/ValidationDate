@@ -123,6 +123,7 @@ public class VerifDate extends javax.swing.JFrame {
         String jr=j.getText();
         String mo=m.getSelectedItem().toString(); // récupération de ComboBox
         String an=a.getText();
+        
         try
         {
             int jour=Integer.parseInt(jr);
@@ -138,14 +139,16 @@ public class VerifDate extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "date invalide");
 
             }
-        
+       
         }
         catch(Exception ex)
         {
           JOptionPane.showMessageDialog(null, "vérifier le jour et l'année");
 
         }
-        
+            j.setText("");
+             a.setText("");
+             
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
